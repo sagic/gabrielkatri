@@ -3,10 +3,13 @@ import React from 'react';
 const ContactPage = () => (
   <div>
     <h1>צור קשר</h1>
-    <form action="#" method="POST">
-        <input type="text" name="name"></input>
-        <input type="email" name="_replyto"></input>
-        <input type="submit" value="Send"></input>
+    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" />
+      <input type="text" name="phone" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <button>Send</button>
     </form>
     <div style={{ border: '2px solid #555' }}>
       <iframe 
@@ -14,7 +17,7 @@ const ContactPage = () => (
         width="100%" height="450" 
         frameBorder="0" 
         style={{ border: 0 }}
-        allowfullscreen 
+        allowFullScreen 
         />
     </div>
   </div>
