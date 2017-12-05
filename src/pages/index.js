@@ -1,15 +1,9 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Page 2</Link>
-    <br />
-    <Link to="/info/citizenship/">Citizenship</Link>
+    <h1>עמוד הבית</h1>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

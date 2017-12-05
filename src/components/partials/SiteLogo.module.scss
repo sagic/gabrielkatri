@@ -1,0 +1,22 @@
+@import './../../styles/variables.scss';
+
+.wrapper {
+  padding: 10px 25px;
+  flex: 1;
+  display: block;
+  text-align: center;
+  a {
+    font-family: $fontHeader;
+    padding: 5px;
+    text-decoration: none;
+    line-height: 1;
+    color: inherit;
+    div:nth-child(1) {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    div:nth-child(2) {
+      font-size: 20px;
+    }
+  }
+}

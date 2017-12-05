@@ -1,0 +1,27 @@
+@import './../../styles/variables.scss';
+
+.contactHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 12px 12px;
+  font-size: 14px;
+  background: #494036;
+  color: $color0;
+  text-align: center;
+  line-height: 1.1;
+  @media all and (max-width: 768px) {
+      padding: 14px 50%;
+  }
+  > div {
+    display: inline-block;
+    white-space: nowrap;
+    a {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      padding: 0 2px;
+    }
+  }
+}
+

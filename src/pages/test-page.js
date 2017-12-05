@@ -1,10 +1,11 @@
 import React from 'react';
 import UI from './../components/ui';
+import styles from './test-page.module.css';
 
 export default () => (
   <UI.Container>
     <h1>Richard Hamming on Luck</h1>
-    <div>
+    <div className={styles.test}>
       <p>
         From Richard Hamming’s classic and must-read talk, “<a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">
           You and Your Research

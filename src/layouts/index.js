@@ -3,47 +3,23 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import './index.css';
+import './../styles/main.scss';
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import Partials from './../components/partials';
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="גבריאל כתרי עו״ד ונוטריון - Gabriel Katri Advocate and Notary"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'גבריאל כתרי, עו”ד ונוטריון - אזרחות רומנית, דרכון רומני, דרכון אירופאי, עורך דין רומני, נוטריון ברומנית, שגרירות ברומניה, השגת קבלת אזרחות רומנית' },
+        { name: 'keywords', content: 'גבריאל כתרי, עו”ד ונוטריון גבריאל כתרי, אזרחות רומנית, דרכון רומני אירופאי, עורך דין, עו”ד רומני, נוטריון ברומנית שגרירות ברומניה, השגת קבלת אזרחות רומנית' },
       ]}
     />
-    <Header />
+    <Partials.ContactHeader />
+    <Partials.FlagSeperator />
+    <Partials.SiteHeader />
     <div
       style={{
         margin: '0 auto',
@@ -54,6 +30,8 @@ const TemplateWrapper = ({ children }) => (
     >
       {children()}
     </div>
+    <Partials.FlagSeperator />
+    <Partials.SiteFooter />
   </div>
 )
 
