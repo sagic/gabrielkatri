@@ -31,6 +31,7 @@ module.exports = class HTML extends React.Component {
           />
           {/* <link href="https://fonts.googleapis.com/css?family=David+Libre|Heebo|Lora|Merriweather" rel="stylesheet" /> */}
           <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
           {this.props.headComponents}
           {css}
         </head>

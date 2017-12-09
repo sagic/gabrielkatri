@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import styles from './info-page.module.scss';
+import styles from './home-page.module.scss';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query we'll write in a bit
@@ -24,7 +24,7 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-query InfoPageByPath($path: String!) {
+query HomePageByPath($path: String!) {
   markdownRemark(frontmatter: { path: { eq: $path } }) {
     html
     frontmatter {

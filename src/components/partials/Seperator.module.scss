@@ -1,0 +1,28 @@
+.box {
+  // width: 70%;
+  // padding: 20px;
+  // background: #fff;
+  // margin: 20px auto 60px;
+  // border-radius: 2px;
+}
+
+.css3Shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 40px rgba(131, 123, 106, 0.5);
+  box-shadow: 0 0 40px rgba(131, 123, 106, 0.5);
+  bottom: 0px;
+  width: 80%;
+  height: 20%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  left: 10%;
+  right: 10%;
+}
+
+.css3Shadow { // , .css3-gradient1, .css3-gradient2 {
+  // position: relative;
+  // -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); 
+  /// box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}

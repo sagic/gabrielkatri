@@ -3,7 +3,11 @@ const path = require('path');
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const infoPageTemplate = path.resolve(`src/templates/info-page.js`);
+  const templates = {
+    info: path.resolve(`src/templates/info-page.js`),
+    home: path.resolve(`src/templates/home-page.js`),
+    article: path.resolve(`src/templates/article-page.js`),
+  };
 
   return graphql(`{
     allMarkdownRemark(
@@ -19,6 +23,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             date
             path
             title
+            template
           }
         }
       }
@@ -31,9 +36,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       result.data.allMarkdownRemark.edges
         .forEach(({ node }) => {
+          // console.log('>>> ', node.frontmatter);
           createPage({
             path: node.frontmatter.path,
-            component: infoPageTemplate,
+            component: templates[node.frontmatter.template] || templates.info,
             context: {} // additional data can be passed via context
           });
         });

@@ -1,0 +1,23 @@
+@import './../styles/_variables.scss';
+
+.title {
+  // margin: .67em -.67em;
+  background: $color3;
+  // color: $color0;
+  padding: 15px 15px;
+  font-weight: 300;
+  font-size: 25px;
+
+  background: hsla(43, 79%, 26%, 0.4);
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 32px;
+
+  @media all and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.content {
+  padding: 15px 15px;
+}

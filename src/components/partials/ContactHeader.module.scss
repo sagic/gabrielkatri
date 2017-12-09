@@ -1,17 +1,26 @@
-@import './../../styles/variables.scss';
+@import './../../styles/_variables.scss';
+
+.wrapper {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 .contactHeader {
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 12px 12px;
+  align-items: center;
+  align-content: center;
+  padding: 0 20%;
   font-size: 14px;
-  background: #494036;
+  background: $color4;
   color: $color0;
-  text-align: center;
   line-height: 1.1;
   @media all and (max-width: 768px) {
-      padding: 14px 50%;
+      // padding: 14px 50%;
   }
   > div {
     display: inline-block;
