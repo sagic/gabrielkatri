@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=David+Libre|Heebo|Lora|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=David+Libre|Heebo:300,400|Lora|Merriweather');
 @import './variables.scss';
 
 html {
@@ -14,12 +14,16 @@ html {
 
 body {
   position: relative;
+  background: rgb(251, 248, 244);
   color: $color2;
   direction: rtl;
   padding: 0;
   margin: 0;
   min-height: 100%;
-  padding-bottom: 60px;  
+  padding-bottom: 220px;  
+  @media all and (max-width: 768px) {
+    padding-bottom: 600px;
+  }
 }
 
 #___gatsby {

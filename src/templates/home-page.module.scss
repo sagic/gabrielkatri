@@ -2,16 +2,16 @@
 
 .title {
   // margin: .67em -.67em;
-  background: $color3;
-  // color: $color0;
-  padding: 15px 15px;
+  // margin: 0 -.67em .67em;
+  margin: 0 0 .67em;
+  background: #ece5de;
+  padding: 22px 30px;
   font-weight: 300;
   font-size: 25px;
-
-  background: hsla(43, 79%, 26%, 0.4);
-  color: #ffffff;
+  background: rgba(119, 89, 14, 0.1);
+  color: #827a69;
   font-weight: 100;
-  font-size: 32px;
+  font-size: 40px;
 
   @media all and (max-width: 768px) {
     text-align: center;
