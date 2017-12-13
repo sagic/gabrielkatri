@@ -1,6 +1,6 @@
 @import './../../styles/_variables.scss';
 
-.menu {
+.wrapper {
   z-index: 9999999;
   position: absolute;
   bottom: 0;
@@ -19,15 +19,12 @@
   // flex-direction: column;
   @media all and (max-width: 768px) {
     // flex-direction: column;
+    position: fixed;
+    top: 50px;
   }
 }
 
-.fixed {
-  position: fixed;
-  top: 50px;
-}
-
-.menu ul {
+.menu {
   // display: flex;
   // flex-wrap: wrap;
   // justify-content: center;
@@ -66,6 +63,13 @@
         // font-weight: 700;
         color: #fff;
       }
+      &.active {
+        // text-decoration: underline;
+        // font-weight: 700;
+        // font-size: 20px;
+        background: $color5;
+        color: $color0;
+      }
       // &:before {
       //   content: "»"; // «";
       //   margin: 0 0px 5px 5px;
@@ -101,6 +105,52 @@
     }
   }
 }
+
+.mobileToggled {
+  .menu {
+    display: flex;
+    li {
+      a {
+        transition: none;
+        padding: 12px;
+        margin: 0;
+        background: $color0;
+        color: $color1;
+        border-top: 1px solid #CCC;
+        &:hover {
+          padding: 12px;
+          margin: 0;
+        }
+        &.active {
+          background: $color5;
+          color: $color0;
+        }
+      }
+    }
+  }
+}
+
+.toggle {
+  display: none;
+}
+
+.toggleLabel {
+  display: none;
+  font-size: 18px;
+  line-height: 1;
+  color: #000;
+  text-align: right;
+  padding: 10px 15px;
+  @media all and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 50px;
+}
+
 
 
 // nav.mainNav {

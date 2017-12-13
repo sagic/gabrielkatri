@@ -22,11 +22,13 @@ class TemplateWrapper extends React.Component {
             { name: 'description', content: 'גבריאל כתרי, עו”ד ונוטריון - אזרחות רומנית, דרכון רומני, דרכון אירופאי, עורך דין רומני, נוטריון ברומנית, שגרירות ברומניה, השגת קבלת אזרחות רומנית' },
             { name: 'keywords', content: 'גבריאל כתרי, עו”ד ונוטריון גבריאל כתרי, אזרחות רומנית, דרכון רומני אירופאי, עורך דין, עו”ד רומני, נוטריון ברומנית שגרירות ברומניה, השגת קבלת אזרחות רומנית' },
           ]}
-        />
+        >
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        </Helmet>
         <Partials.ContactHeader />
         <Partials.SiteHeader />
         <UI.Main>
-            {children()}
+          {children()}
         </UI.Main>
         <Partials.SiteFooter />
       </div>
