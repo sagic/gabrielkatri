@@ -38,7 +38,9 @@ export default class MainMenu extends React.Component {
   }
 
   handleScroll(event) {
-    const test = document.documentElement.clientHeight - 150 - this.menuEl.getBoundingClientRect().height - 50;
+    // const test = document.documentElement.clientHeight - 150 - this.menuEl.getBoundingClientRect().height - 50;
+    const actual = document.documentElement.clientHeight * 60 / 100;
+    const test = parseInt(actual) - 30;
     const fixed = window.scrollY > test;
     this.setState({
       fixed,

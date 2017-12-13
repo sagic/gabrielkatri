@@ -5,7 +5,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sass`,
+    // `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss-sass`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
