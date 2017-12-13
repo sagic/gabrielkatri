@@ -17,6 +17,8 @@
   // align-content: center;
   // display: flex;
   // flex-direction: column;
+  transition: translateZ(0);
+  backface-visibility: hidden;
   @media all and (max-width: 768px) {
     // flex-direction: column;
     position: fixed;
