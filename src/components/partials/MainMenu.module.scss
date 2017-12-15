@@ -21,7 +21,8 @@
   @media all and (max-width: 768px) {
     // flex-direction: column;
     position: fixed;
-    top: 50px;
+    top: 0px;
+    margin-top: 50px;
   }
 }
 
@@ -149,7 +150,8 @@
 
 .fixed {
   position: fixed;
-  top: 50px;
+  top: 0px;
+  margin-top: 50px;
 }
 
 

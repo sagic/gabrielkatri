@@ -20,6 +20,23 @@
   // filter: sepia(1) blur(5px);
 }
 
+.flags {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  // -webkit-filter: sepia(1);
+  // filter: sepia(1) blur(5px);
+  img {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    display: block;
+  }
+  @media all and (max-width: 768px) {
+    bottom: 0;
+  }
+}
+
 .cover {
   position: absolute;
   background: rgba(255,255,255,0.8);
