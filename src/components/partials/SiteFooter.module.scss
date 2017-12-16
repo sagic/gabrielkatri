@@ -15,12 +15,17 @@
     height: 600px;
     // justify-content: flex-start;
   }
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .column {
-  padding: 15px 50px;
   color: $color0;
   white-space: nowrap;
+  @media all and (max-width: 768px) {
+    padding: 0px 0px 30px;
+  }
   h5 {
     font-size: 20px;
     font-weight: 100;
@@ -29,6 +34,9 @@
     padding: 5px 8px 5px;
     min-width: 180px;
     margin: 8px 0;
+    @media all and (max-width: 768px) {
+      padding: 5px 50px 5px 0;
+    }
   }
 }
 
@@ -36,6 +44,9 @@
   padding: 0 5px 0 0;
   margin: 0;
   color: $color0;
+  @media all and (max-width: 768px) {
+    padding: 0 55px 0 0;
+  }
   li {
     padding: 0;
     margin: 0;

@@ -1,0 +1,60 @@
+@import './../styles/_variables.scss';
+
+.title {
+  // margin: .67em -.67em;
+  // margin: 0 -.67em .67em;
+  margin: 0 0 .67em;
+  background: #ece5de;
+  padding: 22px 30px;
+  font-weight: 300;
+  font-size: 25px;
+  background: rgba(119, 89, 14, 0.1);
+  color: #827a69;
+  font-weight: 100;
+  font-size: 40px;
+
+  @media all and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.content {
+  padding: 15px 15px;
+}
+
+.form {
+  color: $color4;
+  padding: 10px 0;
+  font-family: $fontHeader;
+  button {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: $color4;
+    font-family: $fontHeader;
+    padding: 10px;
+    font-size: 20px;
+    color: $color0;
+  }
+}
+
+.row {
+  display: flex;
+  margin: 0 0 20px;
+  label {
+    flex: 0 0 70px;
+  }
+  input, textarea {
+    flex: 1 1 100%;
+    border: 1px solid $color5;
+    border-bottom: 2px solid $color4;
+    outline: 0;
+    background: $color5;
+    color: $color4;
+    padding: 5px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
