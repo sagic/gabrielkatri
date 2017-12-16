@@ -14,6 +14,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-source-filesystem": "^1.5.9",
     "gatsby-transformer-remark": "^1.7.23",
+    "popmotion-react": "^2.1.0",
     "react-fontawesome": "^1.6.1"
   },
   "keywords": [
