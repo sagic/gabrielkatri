@@ -6,6 +6,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     // `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-111372942-1',
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-postcss-sass`,
     {
       resolve: `gatsby-plugin-typography`,
