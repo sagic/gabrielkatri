@@ -1,3 +1,5 @@
+``` Forked from default gatsby starter :) ```
+
 # gatsby-starter-default
 The default Gatsby starter
 

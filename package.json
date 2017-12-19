@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gabriel-katri",
+  "description": "Gabriel Katri - Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sagi Chizik <sagi.chizik@gmail.com>",
   "dependencies": {
     "animate.css": "^3.5.2",
     "gatsby": "^1.9.119",

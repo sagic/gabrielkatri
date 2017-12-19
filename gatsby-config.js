@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `גבריאל כתרי - Gabriel Katri`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
