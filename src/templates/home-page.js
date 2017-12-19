@@ -9,7 +9,7 @@ export default function Template({
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
   return (
     <div>
-      <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+      <Helmet title={`גבריאל כתרי עו״ד ונוטריון - Gabriel Katri Advocate and Notary - ${post.frontmatter.title}`} />
       <div>
         <h1 className={styles.title}>
           <div className="">{post.frontmatter.title}</div>
