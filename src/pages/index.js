@@ -1,6 +1,6 @@
 import React from 'react';
 import Partials from './../components/partials';
-import styles from './home.module.scss'
+import styles from './home.module.scss';
 
 const IndexPage = () => (
   <div>
