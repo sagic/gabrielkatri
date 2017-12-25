@@ -3,6 +3,7 @@ import FontAwesome from 'react-fontawesome';
 import Link from 'gatsby-link';
 import Seperator from './Seperator';
 import FlagSeperator from './FlagSeperator';
+import Flags from './Flags';
 import styles from './MainMenu.module.scss';
 
 export default class MainMenu extends React.Component {
@@ -40,7 +41,7 @@ export default class MainMenu extends React.Component {
   handleScroll(event) {
     // const test = document.documentElement.clientHeight - 150 - this.menuEl.getBoundingClientRect().height - 50;
     const actual = document.documentElement.clientHeight * 60 / 100;
-    const test = parseInt(actual) - 30;
+    const test = parseInt(actual) - 30 - 14;
     const fixed = window.scrollY > test;
     if (fixed !== this.state.fixed) {
       this.setState({
@@ -60,6 +61,7 @@ export default class MainMenu extends React.Component {
     }
     return (
       <nav className={classes.join(' ')} ref={el => this.menuEl = el}>
+          <Flags />
           <FlagSeperator />
           <Seperator>
             <label htmlFor="toggle" className={styles.toggleLabel}>
