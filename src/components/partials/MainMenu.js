@@ -76,14 +76,14 @@ export default class MainMenu extends React.Component {
               onChange={this.handleMobileToggle}
               /> 
             <ul className={styles.menu}>
-              <li>
+              {/* <li>
                 <Link 
                   to="/parallax" 
                   onClick={this.handleMenuClick}
                   activeClassName={styles.active}
                   >פרופיל
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link 
                   to="/about" 
