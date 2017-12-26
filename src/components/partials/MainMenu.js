@@ -61,7 +61,7 @@ export default class MainMenu extends React.Component {
     }
     return (
       <nav className={classes.join(' ')} ref={el => this.menuEl = el}>
-          <Flags />
+          <Flags fixed={!!fixed} />
           <FlagSeperator />
           <Seperator>
             <label htmlFor="toggle" className={styles.toggleLabel}>
