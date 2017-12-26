@@ -1,16 +1,16 @@
 import React from 'react';
-// import FlagSeperator from './FlagSeperator';
+import SocialLinks from './SocialLinks';
 import styles from './SiteFooter.module.scss';
 
 export default () => (
   <div className={styles.wrapper}>
-    {/* <FlagSeperator /> */}
     <div className={styles.column}>
       <h5>מידע כללי</h5>
       <ul className={styles.menu}>
         <li><a href="/parallax">פרופיל</a></li>
         <li><a href="/about">אודותינו</a></li>
         <li><a href="/contact">יצירת קשר</a></li>
+        <li><a href="http://telaviv.mae.ro/en" target="_blank">שגרירות רומניה</a></li>
       </ul>
     </div>
     <div className={styles.column}>
@@ -32,6 +32,7 @@ export default () => (
         <li>טלפון: 09-9509504, 04-8525130</li>
         <li>פקס: 09-9586332</li>
       </ul>
+      <SocialLinks />
     </div>
   </div>
 );
