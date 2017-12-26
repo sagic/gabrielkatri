@@ -146,6 +146,15 @@
   @media all and (max-width: 768px) {
     display: block;
   }
+  span {
+    transform: rotate(0deg);
+    transition: .2s all ease-in-out;
+  }
+  &.rotate {
+    span {
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 .fixed {

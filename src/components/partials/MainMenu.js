@@ -64,7 +64,7 @@ export default class MainMenu extends React.Component {
           <Flags fixed={!!fixed} />
           <FlagSeperator />
           <Seperator>
-            <label htmlFor="toggle" className={styles.toggleLabel}>
+            <label htmlFor="toggle" className={`${styles.toggleLabel} ${mobileToggled ? styles.rotate : ''}`}>
               <FontAwesome
                 name='navicon'
                 size='2x'
